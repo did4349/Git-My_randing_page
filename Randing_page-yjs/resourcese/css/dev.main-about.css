@@ -1,0 +1,134 @@
+body > main.body-item.main > section.main-item.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body > main.body-item.main > section.main-item.about > div.about-item.profile{
+    width:14rem;
+    height:18rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin-bottom:3rem;
+}
+body > main.body-item.main > section.main-item.about > div.about-item.profile > img{
+    width:100%;
+}
+body > main.body-item.main > section.main-item.about > div.about-item.info{
+    text-align: center;
+    margin-bottom:3rem;
+}
+body > main.body-item.main > section.main-item.about > div.about-item.info > p:not(:last-child){
+    margin-bottom: 1rem;
+}
+body > main.body-item.main > section.main-item.about > div.about-item.resume > button.resume-item.btn{
+    width:10rem;
+    height:2rem;
+    border: 0.0625rem solid var(--accent-color);
+    border-radius: 0.4rem;
+    background-color: var(--main-color);
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+body > main.body-item.main > section.main-item.about > div.about-item.resume > button.resume-item.btn:hover{
+    background-color: var(--accent-color);
+    color:var(--font-sub-color);
+}
+body > main.body-item.main > section.main-item.about > div.about-item.fnq{
+    margin-top:3rem;
+}
+body > main.body-item.main > section.main-item.about > div.about-item.fnq > h3.fnq-item.title{
+    text-align: center;
+    font-weight: 700;
+    font-size:2rem;
+    padding-bottom:1.5rem;
+}
+body > main.body-item.main > section.main-item.about > div.about-item.fnq > ul.fnq-item.container{
+    width:60vw;
+    border-top:0.3rem solid var(--accent-color);
+    background-color:var(--main-color);;
+}
+body > main.body-item.main > section.main-item.about > div.about-item.fnq > ul.fnq-item.container > li.fnq-box{
+    position:relative;
+    padding:0.7rem 0.7rem 0.7rem 4rem;
+    border-bottom:0.0625rem solid var(--accent-color);
+}
+body > main.body-item.main > section.main-item.about > div.about-item.fnq > ul.fnq-item.container > li.fnq-box > button.fnq-btn{
+    width:1rem;
+    height:1rem;
+    background-color: var(--main-color);
+    background-image: url(../image/plus.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    position:absolute;
+    top:0.9rem;
+    right:4rem;
+    transition-duration: 400ms;
+}
+body > main.body-item.main > section.main-item.about > div.about-item.fnq > ul.fnq-item.container > li.fnq-box:nth-child(odd) > button.fnq-btn.visible{
+    transform:rotateZ(135deg);
+}
+body > main.body-item.main > section.main-item.about > div.about-item.fnq > ul.fnq-item.container > li.fnq-box:nth-child(2n) > button.fnq-btn.visible{
+    transform:rotateZ(-135deg);
+}
+body > main.body-item.main > section.main-item.about > div.about-item.fnq > ul.fnq-item.container > li.fnq-box > div.fnq-contants{
+    padding:0 6rem 0 0;
+    max-height:0;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+    overflow: hidden;
+    opacity: 0.5;
+    font-size:0.88rem;
+}
+body > main.body-item.main > section.main-item.about > div.about-item.fnq > ul.fnq-item.container > li.fnq-box > button.fnq-btn.visible + div.fnq-contants{
+    opacity: 1;
+    padding:2rem 6rem 2rem 0;
+    max-height:100%;
+}
+
+
+
+@media screen and (max-width:500px){
+
+    body > main.body-item.main > section.main-item.about > div.about-item.profile {
+        width: 10rem;
+        height: 13rem;
+        border-radius: 2rem;
+        overflow: hidden;
+        margin-bottom: 3rem;
+    }
+    body > main.body-item.main > section.main-item.about > div.about-item.info > p{
+        font-size: 0.9rem;
+    }
+    body > main.body-item.main > section.main-item.about > div.about-item.fnq > ul.fnq-item.container {
+        width: 98vw;
+        border-top: 0.3rem solid var(--accent-color);
+        background-color: var(--main-color);
+    }
+    body > main.body-item.main > section.main-item.about > div.about-item.fnq > ul.fnq-item.container > li.fnq-box {
+        position: relative;
+        padding: 0.5rem;
+        border-bottom: 0.0625rem solid var(--accent-color);
+    }
+    body > main.body-item.main > section.main-item.about > div.about-item.fnq > ul.fnq-item.container > li.fnq-box > button.fnq-btn {
+        width: 1rem;
+        height: 1rem;
+        background-color: #efebe9;
+        background-image: url(../image/plus.svg);
+        background-size: 100%;
+        position: absolute;
+        top: 0.5rem;
+        right: 0.6rem;
+        opacity: 0.8;
+        transition-duration: 400ms;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    body > main.body-item.main > section.main-item.about > div.about-item.fnq > ul.fnq-item.container > li.fnq-box > p{
+        font-size: 0.8rem;
+    }
+    
+
+
+}

@@ -1,0 +1,61 @@
+:root{
+    /*color*/
+    --main-color:#efebe9;
+    --accent-color:#bdb9b7;
+    --font-main-color:#000000;
+    --font-sub-color:#ffffff;
+
+    /*size*/
+    --side-padding:13%;
+    --top-padding:8rem;
+}
+html{
+    margin:0;
+    padding:0;
+    font-size:16px;
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    padding:0;
+    font-weight: normal;
+    font-family: 'IBMPlexSansKR-Regular';
+    color:var(--font-main-color);
+    background-color: var(--main-color);
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 1em;
+    margin-block-start:0;
+    margin-block-end:0;
+    margin-inline-start:0;
+    margin-inline-end:0;
+    font-weight: inherit;
+}
+strong,a,p{
+    font-weight: inherit;
+}
+a{
+    text-decoration: none;
+    color:var(--font-main-color);
+    font-family: 'IBMPlexSansKR-Regular';
+}
+p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+ul{
+    list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start:0;
+}
+button{
+    font-family: 'IBMPlexSansKR-Regular';
+    border:none;
+    outline: none;
+    cursor: pointer;
+}

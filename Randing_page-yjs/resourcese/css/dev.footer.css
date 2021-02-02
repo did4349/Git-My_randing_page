@@ -1,0 +1,13 @@
+body > footer.body-item.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:1rem 0;
+    background-color: var(--accent-color);
+    user-select: none;
+}
+body > footer.body-item.footer > div.footer-item.text{
+    color:#0000008f;
+    font-size: 0.8rem;
+}

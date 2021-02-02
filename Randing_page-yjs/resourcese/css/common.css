@@ -1,0 +1,20 @@
+@import "dev.common.css";
+@import "dev.loading.css";
+@import "dev.object.css";
+@import "dev.intro.css";
+@import "dev.navigation.css";
+@import "dev.main.css";
+@import "dev.resume.css";
+@import "dev.main-about.css";
+@import "dev.main-skill.css";
+@import "dev.main-portpolio.css";
+@import "dev.main-contact.css";
+@import "dev.footer.css";
+@import "dev.scroll-arrow.css";
+
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,138 @@
+body > main.body-item.main > section.main-item.contact > div.contact-item.contants{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:4rem 0;
+}
+body > main.body-item.main > section.main-item.contact > div.contact-item.contants > div.contants-item{
+    width:50%;
+    padding:2rem;
+}
+body > main.body-item.main > section.main-item.contact > div.contact-item.contants > div.contants-item > div.left-item,
+body > main.body-item.main > section.main-item.contact > div.contact-item.contants > div.contants-item > div.right-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 0.3456789rem;
+    height:20rem;
+    box-shadow: 0 0 0.5rem 0.0625rem #d6d6d6;
+}
+body > main.body-item.main > section.main-item.contact > div.contact-item.contants > div.contants-item > div.left-item > div.left-item-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width:20rem;
+    padding:0.5rem 0;
+}
+body > main.body-item.main > section.main-item.contact > div.contact-item.contants > div.contants-item > div.left-item > div.left-item-box > img{
+    width:1.2rem;
+    margin-right:3rem;
+    opacity: 0.6;
+    user-select: none;
+}
+body > main.body-item.main > section.main-item.contact > div.contact-item.contants > div.contants-item > div.left-item > div.left-item-box:not(:last-child){
+    margin-bottom:0.5rem;
+}
+body > main.body-item.main > section.main-item.contact > div.contact-item.contants > div.contants-item > div.right-item{
+    flex-direction: row;
+}
+body > main.body-item.main > section.main-item.contact > div.contact-item.contants > div.contants-item > div.right-item > div.right-item-box{
+    width:5rem;
+    height:5rem;
+    opacity: 0.6;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body > main.body-item.main > section.main-item.contact > div.contact-item.contants > div.contants-item > div.right-item > div.right-item-box:not(:last-child){
+    margin-right:3rem;
+}
+body > main.body-item.main > section.main-item.contact > div.contact-item.contants > div.contants-item > div.right-item > div.right-item-box:hover{
+    opacity: 1;
+    transform:translateY(-0.5rem);
+}
+body > main.body-item.main > section.main-item.contact > div.contact-item.contants > div.contants-item > div.right-item > div.right-item-box > span{
+    opacity: 0;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    text-align: center;
+}
+body > main.body-item.main > section.main-item.contact > div.contact-item.contants > div.contants-item > div.right-item > div.right-item-box:hover > span{
+    opacity: 1;
+}
+body > main.body-item.main > section.main-item.contact > div.contact-item.contants > div.contants-item > div.right-item > div.right-item-box > a{
+    display: inline-block;
+    width:100%;
+    height:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+body > main.body-item.main > section.main-item.contact > div.contact-item.contants > div.contants-item > div.right-item > div.right-item-box.instar > a{
+    background-image: url(../image/instagram-brands.svg);
+}
+body > main.body-item.main > section.main-item.contact > div.contact-item.contants > div.contants-item > div.right-item > div.right-item-box.github > a{
+    background-image: url(../image/github-icon.svg);
+}
+
+
+@media screen and (max-width:500px){
+    body > main.body-item.main > section.main-item.contact > div.contact-item.contants {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    body > main.body-item.main > section.main-item.contact > div.contact-item.contants > div.contants-item {
+        width: 100%;
+        padding: 2rem;
+    }
+    body > main.body-item.main > section.main-item.contact > div.contact-item.contants > div.contants-item > div.left-item > div.left-item-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 15rem;
+        padding: 0.5rem 0;
+    }
+
+    body > main.body-item.main > section.main-item.contact > div.contact-item.contants > div.contants-item > div.left-item, body > main.body-item.main > section.main-item.contact > div.contact-item.contants > div.contants-item > div.right-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        height: 18rem;
+        box-shadow: rgb(214, 214, 214) 0px 0px 0.5rem 0.0625rem;
+        border-radius: 0.345679rem;
+    }
+
+    body > main.body-item.main > section.main-item.contact > div.contact-item.contants > div.contants-item > div.left-item > div.left-item-box > img{
+        width:1rem;
+        margin-right:1.5rem;
+        opacity: 0.6;
+        user-select: none;
+    }
+    body > main.body-item.main > section.main-item.contact > div.contact-item.contants > div.contants-item > div.left-item > div.left-item-box >span {
+        font-size: 0.8rem;
+    }
+    body > main.body-item.main > section.main-item.contact > div.contact-item.contants > div.contants-item > div.right-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        height: 18rem;
+        box-shadow: rgb(214, 214, 214) 0px 0px 0.5rem 0.0625rem;
+        border-radius: 0.345679rem;
+    }
+}

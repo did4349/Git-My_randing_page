@@ -1,0 +1,102 @@
+body > div.body-item.navigation{
+    display: block;
+    position:sticky;
+    top:0;
+    background-color: var(--main-color);
+    transition-duration: 500ms;
+    z-index: 7;
+    overflow: hidden;
+    opacity: 0.25;
+    pointer-events: all;
+}
+body > div.body-item.navigation.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+body > div.navigation-item.btn{
+    width:1.5rem;
+    height:1.5rem;
+    background-image: url(../image/nav-toggle-btn.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: fixed;
+    right:1.5rem;
+    top:1rem;
+    display: none;
+}
+body > div.body-item.navigation:hover{
+    opacity: 1;
+}
+body > div.body-item.navigation > nav.navigation-item.nav{
+    position:relative;
+    padding:1rem var(--side-padding);
+}
+body > div.body-item.navigation > nav.navigation-item.nav > ul.nav-item.list{
+    position: relative;
+    left:50%;
+    transform:translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+body > div.body-item.navigation > nav.navigation-item.nav > ul.nav-item.list > li.list-item{
+    padding:0 4rem;
+}
+body > div.body-item.navigation > nav.navigation-item.nav > ul.nav-item.list > li.list-item > a{
+    font-size: 1.5rem;
+    transition-duration:500ms;
+}
+body > div.body-item.navigation > nav.navigation-item.nav > ul.nav-item.list > li.list-item > a:hover{
+    border-bottom:0.0625rem solid var(--font-main-color);
+}
+
+@media screen and (max-width:800px){
+    body > div.body-item.navigation{
+        display:none;
+        position:sticky;
+        top:0;
+        background-color: var(--main-color);
+        z-index: 7;
+    }
+    body > div.body-item.navigation.visible{
+        display: block;
+        opacity: 1;
+        pointer-events: all;
+    }
+    body > div.navigation-item.btn{
+        width:1.5rem;
+        height:1.5rem;
+        background-image: url(../image/nav-toggle-btn.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        position:fixed;
+        right:1rem;
+        top:1rem;
+        display: block;
+        cursor: pointer;
+        z-index: 2;
+    }
+    body > div.body-item.navigation > nav.navigation-item.nav{
+        position:relative;
+        padding:0 var(--side-padding);
+    }
+    body > div.body-item.navigation > nav.navigation-item.nav > ul.nav-item.list{
+        position: relative;
+        left:50%;
+        transform:translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.9;
+    }
+    body > div.body-item.navigation > nav.navigation-item.nav > ul.nav-item.list > li.list-item{
+        padding:1rem 100%;
+        border-bottom:0.0625rem solid var(--accent-color);
+    }
+}
+
+

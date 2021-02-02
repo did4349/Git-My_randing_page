@@ -1,0 +1,41 @@
+body > div.body-item.black-view{
+    width:100vw;
+    height:100vh;
+    background-color: #00000063;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:5;
+    transition-duration: 400ms;
+    transition-timing-function: ease;
+    pointer-events: none;
+    opacity: 0;
+}
+body > div.body-item.black-view.visible{
+    opacity: 1;
+    pointer-events: all;
+}
+h2.object-main-title{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    padding:3rem 0;
+}
+.object-text-hidden {
+    position:absolute !important;  
+    width:1px; 
+    height:1px; 
+    overflow:hidden;
+    clip:rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip:rect(1px, 1px, 1px, 1px);
+}
+
+
+@media screen and (max-width:500px){
+    h2.object-main-title{
+        text-align: center;
+        font-size: 2.8rem;
+        font-weight: bold;
+        padding:3rem 0;
+    }
+}

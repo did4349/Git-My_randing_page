@@ -1,0 +1,117 @@
+body > div.body-item.resume{
+    width:75vw;
+    height:80vh;
+    position:fixed;
+    bottom:-2rem;
+    left:50%;
+    transform:translate(-50%,100%);
+    background-color: #f0f0f0;
+    z-index: 6;
+    border-radius: 2rem;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in;
+    overflow: scroll;
+    pointer-events: none;
+    padding:5rem;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+body > div.body-item.resume::-webkit-scrollbar{
+    display: none;
+}
+body > div.body-item.resume > button.resume-item.close{
+    background-image: url(../image/close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width:2rem;
+    height:2rem;
+    position:absolute;
+    top:1rem;
+    right:1rem;
+}
+body > div.body-item.resume.visible{
+    transform:translate(-50%,0);
+    pointer-events: all;
+}
+body > div.body-item.resume > button.resume-item.pdf{
+    padding:0.7rem 1rem;
+    border:0.0652rem solid var(--accent-color);
+    border-radius: 0.2rem;
+    position:absolute;
+    top:0.7rem;
+    right:5rem;
+    transition-duration: 400ms;
+}
+body > div.body-item.resume > button.resume-item.pdf:hover{
+    background-color: var(--accent-color);
+}
+body > div.body-item.resume > button.resume-item.pdf:hover > a{
+    color:var(--font-sub-color);
+}
+body > div.body-item.resume > div.resume-item.wrap{
+    width:100%;
+}
+body > div.body-item.resume > div.resume-item.wrap > div.wrap-item{
+    padding:1.5rem 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+body > div.body-item.resume > div.resume-item.wrap > div.wrap-item > span.title{
+    font-size:1.22222rem;
+    margin-right:1.2rem;
+    user-select: none;
+}
+body > div.body-item.resume > div.resume-item.wrap > div.wrap-item:nth-child(3){
+    padding-bottom:3rem;
+    border-bottom:0.0625rem solid var(--font-main-color);
+}
+body > div.body-item.resume > div.resume-item.wrap > div.wrap-item.training{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0 10rem;
+    margin-bottom:3rem;
+}
+body > div.body-item.resume > div.resume-item.wrap > div.wrap-item.training > span.title.training{
+    padding:3rem 0;
+    margin:0;
+}
+body > div.body-item.resume > div.resume-item.wrap > div.wrap-item.training > div.training-item.charts{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);
+    width:100%;
+    grid-gap: 2rem 4rem;
+}
+body > div.body-item.resume > div.resume-item.wrap > div.wrap-item.training > div.training-item.charts > div.charts-item{
+    text-align: center;
+}
+body > div.body-item.resume > div.resume-item.wrap > div.wrap-item.training > div.training-item.charts > div.charts-item.title{
+    font-size: 1.1rem;
+    border-bottom:0.0625rem solid var(--font-main-color);
+}
+body > div.body-item.resume > div.resume-item.wrap > div.wrap-item.growth,
+body > div.body-item.resume > div.resume-item.wrap > div.wrap-item.personality{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+body > div.body-item.resume > div.resume-item.wrap > div.wrap-item.growth > span.title,
+body > div.body-item.resume > div.resume-item.wrap > div.wrap-item.personality > span.title{
+    margin-bottom:1rem;
+}
+body > div.body-item.resume > div.resume-item.wrap > div.wrap-item.growth{
+    border-top:0.0625rem solid var(--font-main-color);
+}
+
+@media screen and (max-width:800px){
+    body > div.body-item.resume > div.resume-item.wrap{
+        width:100%;
+        display: none;
+    }
+}
+

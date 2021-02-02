@@ -1,0 +1,85 @@
+body > div.body-item.intro{
+    height:100vh;
+    width:100%;
+    overflow: hidden;
+}
+body > div.body-item.intro > div.intro-item{
+    height:100%;
+    width:100%;
+    background-color: var(--main-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:0;
+    opacity: 0;
+    transition-duration: 800ms;
+    transition-timing-function: ease-in-out;
+}
+body > div.body-item.intro > div.intro-item.img1{
+    background-image: url(../image/intro/intro-background-1.jpg);
+}
+body > div.body-item.intro > div.intro-item.img2{
+    background-image: url(../image/intro/intro-background-2.jpg);
+}
+body > div.body-item.intro > div.intro-item.img3{
+    background-image: url(../image/intro/intro-background-3.jpg);
+}
+body > div.body-item.intro > div.intro-item > div.intro-img-item.text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transition-duration: 400ms;
+    transform:translate(-50%,-80%);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+body > div.body-item.intro > div.intro-item > div.intro-img-item.text > strong{
+    font-size:5rem;
+    color:var(--font-sub-color);
+    user-select: none;
+}
+body > div.body-item.intro > div.intro-item > div.intro-img-item.text > strong:not(:last-child){
+    margin-bottom:1rem;
+}
+body > div.body-item.intro > div.intro-item.showing{
+    z-index:1;
+    opacity: 1;
+}
+body > div.body-item.intro > div.intro-item.showing > div.intro-img-item.text{
+    transform:translate(-50%,-50%);
+    opacity: 1;
+}
+
+
+@media screen and (max-width:800px){
+    body > div.body-item.intro{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

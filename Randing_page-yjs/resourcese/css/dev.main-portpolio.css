@@ -1,0 +1,119 @@
+body > main.body-item.main > section.main-item.portpolio > div.portpolio-item.grid-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:4rem;
+}
+body > main.body-item.main > section.main-item.portpolio > div.portpolio-item.grid-box > div.grid-item{
+    padding:50% 0;
+    background-image: url(../image/portpolio/empty-img.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position:relative;
+    transition-duration: 400ms;
+    transition-timing-function: ease;
+    transform:translateY(-3rem);
+    opacity: 0;
+
+}
+body > main.body-item.main > section.main-item.portpolio > div.portpolio-item.grid-box > div.grid-item:nth-child(1){
+    background-image: url(../image/portpolio/portpolio_thumbnail/compouterInfo_thumbnail.jpg);
+}
+body > main.body-item.main > section.main-item.portpolio > div.portpolio-item.grid-box > div.grid-item:nth-child(2){
+    background-image:url(../image/portpolio/portpolio_thumbnail/SenierProject_thumbnail.jpg);
+}
+body > main.body-item.main > section.main-item.portpolio > div.portpolio-item.grid-box > div.grid-item:nth-child(3){
+    background-image:url(../image/portpolio/portpolio_thumbnail/louisVuitton-clonePage_thumbnail.PNG);
+}
+body > main.body-item.main > section.main-item.portpolio > div.portpolio-item.grid-box > div.grid-item.visible{
+    transform:translateY(0);
+    opacity: 1;
+}
+body > main.body-item.main > section.main-item.portpolio > div.portpolio-item.grid-box > div.grid-item:hover{
+    transform:translate(-1.5rem,-1.5rem);
+}
+body > main.body-item.main > section.main-item.portpolio > div.portpolio-item.grid-box > div.grid-item > div.grid-item-bg{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: #00000075;
+    opacity: 0;
+    transition-duration: 400ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+body > main.body-item.main > section.main-item.portpolio > div.portpolio-item.grid-box > div.grid-item:hover > div.grid-item-bg{
+    opacity: 1;   
+}
+body > main.body-item.main > section.main-item.portpolio > div.portpolio-item.grid-box > div.grid-item > div.grid-item-bg > span.grid-item-title{
+    color:#ffffff;
+    font-size: 1.33333em;
+    margin-bottom:1.5rem;
+    text-align: center;
+}
+body > main.body-item.main > section.main-item.portpolio > div.portpolio-item.grid-box > div.grid-item > div.grid-item-bg > div.grid-item-btn.box > button.grid-item-btn-item {
+    width:5.5rem;
+    height:2.5rem;
+    background-color: #ffffff00;
+    border:0.06rem solid var(--font-sub-color);
+    font-size: 1.2rem;
+    transition-duration: 400ms;
+    border-radius: 0.1rem;
+}
+body > main.body-item.main > section.main-item.portpolio > div.portpolio-item.grid-box > div.grid-item > div.grid-item-bg > div.grid-item-btn.box > button.grid-item-btn-item > a{
+    color:var(--font-sub-color);
+    transition-duration: 400ms;
+}
+body > main.body-item.main > section.main-item.portpolio > div.portpolio-item.grid-box > div.grid-item > div.grid-item-bg > div.grid-item-btn.box > button.grid-item-btn-item:hover{
+    background-color: var(--font-sub-color);
+}
+body > main.body-item.main > section.main-item.portpolio > div.portpolio-item.grid-box > div.grid-item > div.grid-item-bg > div.grid-item-btn.box > button.grid-item-btn-item:hover > a{
+    color: var(--font-main-color);
+}
+body > main.body-item.main > section.main-item.portpolio > div.portpolio-item.grid-box > div.grid-item:hover > div.grid-item-bg > div.grid-item-border{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color: #ffffff00;
+    width:90%;
+    height:90%;
+    border:0.5rem solid #ffa03e;
+    opacity: 1;
+    animation-name: grid-border;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+    pointer-events: none;
+}
+@keyframes grid-border{
+    0%{
+        opacity: 0;
+        height:0%;
+    }
+    100%{
+        opacity: 1;
+        height:90%;
+    }
+}
+@media screen and (max-width: 1280px) {
+
+    body > main.body-item.main > section.main-item.portpolio > div.portpolio-item.grid-box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+
+    body > main.body-item.main > section.main-item.portpolio > div.portpolio-item.grid-box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:4rem;
+    }
+}
+
